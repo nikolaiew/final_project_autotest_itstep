@@ -33,7 +33,7 @@ def browser(request):
     elif browser_name == "firefox":
         print("\nstart firefox browser for test..")
         opts_firefox.add_argument('--width=1920')
-        opts_firefox.add_argument('--height=1080')  # ('window-size=1920,1080')
+        opts_firefox.add_argument('--height=1080')
         browser = webdriver.Firefox(options=opts_firefox)
     else:
         raise pytest.UsageError("--browser_name should be chrome or firefox")
