@@ -11,11 +11,16 @@ class BasePageLocators:
     UAH = (By.XPATH, '//option[@class="custom_list clc"]')
     USD = (By.XPATH, '//option[@value="USD"]')
     EUR = (By.XPATH, '//option[@value="EUR"]')
-    LOGO = (By.XPATH, '//img[@src="images/logo.png"]')
+    LOGO_HEADER = (By.XPATH, '//img[@src="images/logo.png"]')
     SEARCH_INPUT = (By.XPATH, '//input[@id="typeahead"]')
     SEARCH_BUTTON = (By.XPATH, '//button[@type="submit"]')
     WISH_BUTTON = (By.XPATH, '//a[@href="wish/show"]')
     CART_BUTTON = (By.XPATH, '//a[@href="cart/show"]')
-
-
-
+    NEW_BUTTON = (By.XPATH, '//div[@class="links-for-checks"]/a[1]')
+    DISCOUNTS_BUTTON = (By.XPATH, '//div[@class="links-for-checks"]/a[2]')
+    HITS_BUTTON = (By.XPATH, '//div[@class="links-for-checks"]/a[3]')
+    SAMSUNG = (By.XPATH, '//li[6]/div')
+    SAMSUNG_J701 = (By.XPATH, '//li[6]/ul/li[55]')
+    SUBSCRIBE = (By.XPATH, '//button[@class="newsletter_button"]')
+    SUBSCRIBE_INPUT = (By.XPATH, '//input[@type="email"]')
+    LOGO_FOOTER = (By.XPATH, '//img[@src="images/logo-footer.png"]')
