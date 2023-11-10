@@ -22,9 +22,9 @@ class TestMainPage:
         self.link_to_cabinet = browser.current_url
         page = MainPage(browser, self.link_to_cabinet)
         page.is_button_login()
-        page.is_button_feedback()
-        page.is_button_delivery()
-        page.is_button_warranty()
+        page.is_button_feedback()  # hover
+        page.is_button_delivery()  # hover
+        page.is_button_warranty()  # hover
         page.is_phone()
         page.is_button_currency()
         page.is_button_uah()
@@ -46,7 +46,7 @@ class TestMainPage:
         page = MainPage(browser, self.link_to_cabinet)
         page.is_main_slider()
         page.is_cat_zaryadky()
-        page.is_cat_power_banks()
+        page.is_cat_power_banks()  # hover
         page.is_info_block_vozvrat()
         page.is_info_block_dostavka()
         page.is_info_block_otsrochka()

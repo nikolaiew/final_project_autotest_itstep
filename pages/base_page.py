@@ -43,7 +43,7 @@ class BasePage:
             return False
         return True
 
-    def hover_actions(self, how, what):
+    def hover_action(self, how, what):
         try: hover = self.browser.find_element(how, what)
         except NoSuchElementException or ElementNotInteractableException or ElementClickInterceptedException: return False
         ActionChains(self.browser).move_to_element(hover).perform()

@@ -10,21 +10,21 @@ class MainPage(base_page.BasePage):
         print(f"\n{inspect.currentframe().f_code.co_name} - Ok")
 
     def is_button_feedback(self):
-        assert self.hover_actions(*locators.BasePageLocators.DETAILS), \
+        assert self.hover_action(*locators.BasePageLocators.DETAILS), \
             "Element 'Детали сотрудничества' is not present"
         assert self.is_element_present(*locators.BasePageLocators.FEEDBACK), \
             "Button 'Обратная связь' is not present"
         print(f"{inspect.currentframe().f_code.co_name} - Ok")
 
     def is_button_delivery(self):
-        assert self.hover_actions(*locators.BasePageLocators.DETAILS), \
+        assert self.hover_action(*locators.BasePageLocators.DETAILS), \
             "Element 'Детали сотрудничества' is not present"
         assert self.is_element_present(*locators.BasePageLocators.DELIVERY), \
             "Button 'Доставка' is not present"
         print(f"{inspect.currentframe().f_code.co_name} - Ok")
 
     def is_button_warranty(self):
-        assert self.hover_actions(*locators.BasePageLocators.DETAILS), \
+        assert self.hover_action(*locators.BasePageLocators.DETAILS), \
             "Element 'Детали сотрудничества' is not present"
         assert self.is_element_present(*locators.BasePageLocators.WARRANTY), \
             "Button 'Гарантия' is not present"
@@ -107,7 +107,7 @@ class MainPage(base_page.BasePage):
         print(f"{inspect.currentframe().f_code.co_name} - Ok")
 
     def is_samsung_j701(self):
-        assert self.hover_actions(*locators.BasePageLocators.SAMSUNG), \
+        assert self.hover_action(*locators.BasePageLocators.SAMSUNG), \
             "Button 'Samsung' is not present or intractable"
         assert self.is_element_present(*locators.BasePageLocators.SAMSUNG_J701), \
             "Button 'Samsung J701' is not present"
@@ -125,7 +125,7 @@ class MainPage(base_page.BasePage):
         print(f"{inspect.currentframe().f_code.co_name} - Ok")
 
     def is_cat_power_banks(self):
-        assert self.hover_actions(*locators.MainPageLocators.CAT_ZARYADKY), \
+        assert self.hover_action(*locators.MainPageLocators.CAT_ZARYADKY), \
             "Element CAT ZARYADKY is not present or intractable"
         assert self.is_element_present(*locators.MainPageLocators.CAT_POWER_BANKS), \
             "Element CAT POWER BANKS is not present"
@@ -220,7 +220,7 @@ class MainPage(base_page.BasePage):
     def subscribe_actions(self, email):
         assert self.input_data(*locators.BasePageLocators.SUBSCRIBE_INPUT, email), \
             "Input field is not present"
-        self.explicit_wait(5)
+        self.explicit_wait(2)
         assert self.click_element(*locators.BasePageLocators.SUBSCRIBE), \
             "Button 'Подписаться!' is not present or intractable"
         print(f"\n{inspect.currentframe().f_code.co_name} - Ok")

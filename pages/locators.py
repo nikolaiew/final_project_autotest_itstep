@@ -55,3 +55,23 @@ class MainPageLocators:
     TRENDY_RIGHT_BUTTON = (By.XPATH, '//div[@class="trends_slider_nav"]/div[2]')
     TRENDY_C2 = (By.XPATH, '//div[@class="col-lg-9"]//div[@class="slick-slide slick-active"][1]')
 
+
+class SignupLoginPageLocators:
+    pass
+
+
+class OrderPageLocators:
+    pass
+
+
+class CabinetPageLocators:
+    pass
+
+
+class CategoryPageLocators:
+    pass
+
+
+class SearchPageLocators:
+    pass
+
