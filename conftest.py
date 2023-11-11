@@ -28,7 +28,8 @@ def browser(request):
     browser_name = request.config.getoption("browser_name")
     if browser_name == "chrome":
         print("\nstart chrome browser for test..")
-        opts_chrome.add_argument('--start-maximized')  # ('window-size=1920,1080')
+        # opts_chrome.add_argument('--start-maximized')
+        opts_chrome.add_argument('--window-size=1920,1080')
         browser = webdriver.Chrome(options=opts_chrome)
     elif browser_name == "firefox":
         print("\nstart firefox browser for test..")
